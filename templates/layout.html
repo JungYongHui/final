@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>HTML 문서</title>
+    <style>
+        td, th {
+            padding:10px;   /* 셀 테두리와 내용 사이의 간격(패딩) */
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption>
+            <strong>2016112564</strong>
+        </caption>
+        <tr>
+            <th>과목명</th>
+            <th>담당교원</th>
+            <th><U>메모장</U></th>
+        </tr>
+        <tr>
+            <th>머신러닝</th>
+            <td>이종태 교수님</td>
+            <td><button type="submit" name="이동">
+                <a href="{{ url_for('memos')}}">이동</a>
+            </button></td>
+        </tr>
+        <tr>
+            <th>정보시스템 통합 및 실습</th>
+            <td>간자르 교수님</td>
+            <td><button type="submit" name="이동">
+                <a href="{{ url_for('memos')}}">이동</a>
+            </button></td>
+        </tr>
+	    <tr>
+            <th>산업 AI</th>
+            <td>우딘 교수님</td>
+            <td><button type="submit" name="이동">
+                <a href="{{ url_for('memos')}}">이동</a>
+            </button></td>
+        </tr>
+	    <tr>
+            <th>기능</th>
+        </tr>
+	    <tr>
+            <th>계산기</th>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><button type="submit" name="calcul">
+                <a href="{{ url_for('sessions')}}">이동</a>
+            </button></td>
+        </tr>
+    </table>
+
+</body>
+</html>
